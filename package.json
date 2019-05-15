@@ -1,0 +1,15 @@
+{
+  "name": "hero-design-rn",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "workspaces": {
+    "packages": ["lib", "documentation", "sandbox"]
+  },
+  "scripts": {
+    "dev": "cd sandbox && expo start"
+  },
+  "author": "",
+  "license": "ISC"
+}
