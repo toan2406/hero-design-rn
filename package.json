@@ -8,7 +8,8 @@
     "packages": ["lib", "documentation", "sandbox"]
   },
   "scripts": {
-    "dev": "cd sandbox && expo start"
+    "dev": "cd sandbox && expo start",
+    "doc": "cd documentation && styleguidist server"
   },
   "author": "",
   "license": "ISC"
