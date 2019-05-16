@@ -6,8 +6,8 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Button />
+        <View style={styles.pusher} />
+        <Button position="bottom">Button</Button>
       </View>
     );
   }
@@ -19,5 +19,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  pusher: {
+    flex: 1,
   },
 });
