@@ -10,7 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "@hero-design/lib": "^1.0.0",
-    "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {

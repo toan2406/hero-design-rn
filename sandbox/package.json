@@ -1,7 +1,7 @@
 {
   "name": "@hero-design/sandbox",
   "version": "1.0.0",
-  "main": "main.js",
+  "main": "sandbox/main.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
