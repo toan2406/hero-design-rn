@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "cd sandbox && expo start",
-    "doc": "cd documentation && styleguidist server"
+    "doc": "cd documentation && docz dev"
   },
   "author": "",
   "license": "ISC"
