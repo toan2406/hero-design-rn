@@ -1,26 +1,20 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Button from '@hero-design/lib/src/components/Button';
+import { createStackNavigator, createAppContainer } from 'react-navigation';
+import HomeScreen from './Home';
+import routes from './routes';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <View style={styles.pusher} />
-        <Button position="bottom">Button</Button>
-      </View>
-    );
-  }
-}
+const AppNavigator = createStackNavigator(
+  {
+    Home: {
+      screen: HomeScreen,
+      navigationOptions: {
+        title: 'Hero Design RN Sandbox',
+      },
+    },
+    ...routes,
+  },
+  {
+    initialRouteName: 'Home',
+  },
+);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  pusher: {
-    flex: 1,
-  },
-});
+export default createAppContainer(AppNavigator);

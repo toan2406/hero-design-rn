@@ -9,7 +9,8 @@
   },
   "scripts": {
     "dev": "cd sandbox && expo start",
-    "doc": "cd documentation && styleguidist server"
+    "doc": "cd documentation && styleguidist server",
+    "doc:release": "cd documentation && styleguidist build && surge styleguide"
   },
   "author": "",
   "license": "ISC"

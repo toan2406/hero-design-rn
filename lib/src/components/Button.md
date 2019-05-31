@@ -5,5 +5,5 @@ Button example:
 ```
 
 ```js
-<Button children="Click me" color="red" position="bottom" onPress={console.log} />
+<Button children="Click me" color="red" bottom onPress={console.log} />
 ```
