@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@react-native-community/eslint-config": "^0.0.5",
     "react-native-safe-area-view": "^0.14.1"
   },
   "devDependencies": {

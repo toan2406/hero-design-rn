@@ -3,7 +3,7 @@ module.exports = {
     es6: true,
     node: true
   },
-  extends: "airbnb",
+  extends: "@react-native-community",
   globals: {
     Atomics: "readonly",
     SharedArrayBuffer: "readonly"
@@ -17,7 +17,6 @@ module.exports = {
   },
   plugins: ["react"],
   rules: {
-    "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
-    "comma-dangle": ["error", "always-multiline"]
+    "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }]
   }
 };
