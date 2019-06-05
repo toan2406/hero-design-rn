@@ -1,6 +1,17 @@
-import React from 'react';
-import { View, StyleSheet } from 'react-native';
-import Button from '@hero-design/lib/src/components/Button';
+import React from "react";
+import { View, StyleSheet } from "react-native";
+import Button from "@hero-design/lib/src/components/Button";
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  pusher: {
+    flex: 1
+  }
+});
 
 class ButtonScreen extends React.Component {
   render() {
@@ -13,16 +24,5 @@ class ButtonScreen extends React.Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  pusher: {
-    flex: 1,
-  },
-});
 
 export default ButtonScreen;

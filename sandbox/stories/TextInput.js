@@ -1,6 +1,13 @@
-import React from 'react';
-import { View, StyleSheet } from 'react-native';
-import TextInput from '@hero-design/lib/src/components/TextInput';
+import React from "react";
+import { View, StyleSheet } from "react-native";
+import TextInput from "@hero-design/lib/src/components/TextInput";
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 20
+  }
+});
 
 class TextInputScreen extends React.Component {
   render() {
@@ -13,12 +20,5 @@ class TextInputScreen extends React.Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 20,
-  },
-});
 
 export default TextInputScreen;
