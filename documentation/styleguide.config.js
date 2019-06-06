@@ -14,4 +14,6 @@ module.exports = {
       ],
     },
   },
+  exampleMode: 'collapse',
+  usageMode: 'expand',
 };
