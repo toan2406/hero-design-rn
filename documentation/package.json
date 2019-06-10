@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hero-design/lib": "^1.0.0",
+    "hero-design-rn": "^1.0.0",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {

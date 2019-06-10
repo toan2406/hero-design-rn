@@ -1,15 +1,17 @@
 {
-  "name": "@hero-design/lib",
+  "name": "hero-design-rn",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "yarn run jest",
+    "lint": "yarn run eslint ./src --quiet"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@react-native-community/eslint-config": "^0.0.5",
+    "jest": "^24.8.0",
     "react-native-safe-area-view": "^0.14.1"
   },
   "devDependencies": {
