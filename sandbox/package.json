@@ -9,7 +9,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "@hero-design/lib": "^1.0.0",
+    "hero-design-rn": "^1.0.0",
     "@react-native-community/eslint-config": "^0.0.5",
     "expo": "^32.0.0",
     "react": "16.5.0",

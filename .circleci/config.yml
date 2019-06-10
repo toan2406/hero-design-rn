@@ -1,0 +1,82 @@
+restore_yarn_cache: &restore_yarn_cache
+  restore_cache:
+    key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
+
+save_yarn_cache: &save_yarn_cache
+  save_cache:
+    key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
+    paths:
+      - ~/.cache/yarn
+
+yarn_install: &yarn_install
+  run:
+    command: yarn install
+
+default_config: &default_config
+  working_directory: ~/app
+  docker:
+    - image: ehdevops/node:0.1.3
+  environment:
+    - CI: true
+
+version: 2
+jobs:
+  lint:
+    <<: *default_config
+    steps:
+      - checkout
+      - setup_remote_docker
+      - *restore_yarn_cache
+      - *yarn_install
+      - *save_yarn_cache
+      - run: cd lib && yarn lint
+  test:
+    <<: *default_config
+    steps:
+      - checkout
+      - setup_remote_docker
+      - *restore_yarn_cache
+      - *yarn_install
+      - *save_yarn_cache
+      - run: cd lib && yarn test
+  release:
+    <<: *default_config
+    steps:
+      - checkout
+      - setup_remote_docker
+      - *restore_yarn_cache
+      - *yarn_install
+      - *save_yarn_cache
+      - attach_workspace:
+        at: ~/app
+      - run:
+          name: Authenticate with registry
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/app/.npmrc
+      - run:
+          name: Publish package
+          command: cd lib && npm publish
+
+workflows:
+  version: 2
+  build_and_release:
+    jobs:
+      - lint:
+          context: org-global
+      - test:
+          context: org-global
+      - release_lib:
+          context: org-global
+          filters:
+            branches:
+              only:
+                - master
+          requires:
+            - lint
+            - test
+            - hold_release
+      - hold_release:
+          type: approval
+          filters:
+          branches:
+          only: master
+
