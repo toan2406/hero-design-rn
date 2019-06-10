@@ -55,10 +55,9 @@ jobs:
       - run:
           name: Publish package
           command: cd lib && npm publish
-
 workflows:
   version: 2
-  build_and_release:
+  build_and_deploy:
     jobs:
       - lint:
           context: org-global
@@ -77,6 +76,6 @@ workflows:
       - hold_release:
           type: approval
           filters:
-          branches:
-          only: master
+            branches:
+              only: master
 
