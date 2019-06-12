@@ -1,0 +1,12 @@
+# Owners
+* @Thinkei/mobile
+
+# Config CI
+/.circleci/ @tuanmai
+
+# Config
+/lib/src/config/ @tuanmai
+
+# Components
+/lib/src/components/Button/ @toan2406
+/lib/src/components/TextInput/ @toan2406
