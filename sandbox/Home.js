@@ -1,5 +1,7 @@
+import { FlatList, TouchableOpacity, StyleSheet } from "react-native";
+import { Text } from "hero-design-rn";
 import React from "react";
-import { FlatList, TouchableOpacity, Text, StyleSheet } from "react-native";
+
 import routes from "./routes";
 
 const BORDER_COLOR = "#aaaaaa";
