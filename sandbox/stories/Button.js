@@ -1,6 +1,6 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
-import Button from "@hero-design/lib/src/components/Button";
+import { Button } from "hero-design-rn";
 
 const styles = StyleSheet.create({
   container: {

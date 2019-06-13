@@ -1,17 +1,24 @@
-import ButtonScreen from './stories/Button';
-import TextInputScreen from './stories/TextInput';
+import ButtonScreen from "./stories/Button";
+import CustomeTheme from "./stories/CustomeTheme";
+import TextInputScreen from "./stories/TextInput";
 
 export default {
   Button: {
     screen: ButtonScreen,
     navigationOptions: {
-      title: 'Button',
-    },
+      title: "Button"
+    }
   },
   TextInput: {
     screen: TextInputScreen,
     navigationOptions: {
-      title: 'TextInput',
-    },
+      title: "TextInput"
+    }
   },
+  CustomeTheme: {
+    screen: CustomeTheme,
+    navigationOptions: {
+      title: "Custom Theme"
+    }
+  }
 };

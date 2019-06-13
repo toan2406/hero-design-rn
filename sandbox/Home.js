@@ -1,15 +1,13 @@
-import React from 'react';
-import { FlatList, TouchableOpacity, Text, StyleSheet } from 'react-native';
-import {
-  BORDER_COLOR,
-  BUTTON_PADDING_VERTICAL,
-  BUTTON_TEXT_SIZE,
-} from '@hero-design/lib/src/constants';
-import routes from './routes';
+import React from "react";
+import { FlatList, TouchableOpacity, Text, StyleSheet } from "react-native";
+import routes from "./routes";
 
+const BORDER_COLOR = "#aaaaaa";
+const BUTTON_PADDING_VERTICAL = 15;
+const BUTTON_TEXT_SIZE = 16;
 const menuData = Object.keys(routes).map(route => ({
   title: routes[route].navigationOptions.title,
-  route,
+  route
 }));
 
 const HomeScreen = ({ navigation }) => (
@@ -19,7 +17,8 @@ const HomeScreen = ({ navigation }) => (
     renderItem={({ item: { title, route } }) => (
       <TouchableOpacity
         onPress={() => navigation.navigate(route)}
-        style={styles.row}>
+        style={styles.row}
+      >
         <Text style={styles.text}>{title}</Text>
       </TouchableOpacity>
     )}
@@ -29,17 +28,17 @@ const HomeScreen = ({ navigation }) => (
 
 const styles = StyleSheet.create({
   menu: {
-    flex: 1,
+    flex: 1
   },
   row: {
-    alignItems: 'center',
+    alignItems: "center",
     paddingVertical: BUTTON_PADDING_VERTICAL,
     borderBottomColor: BORDER_COLOR,
-    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomWidth: StyleSheet.hairlineWidth
   },
   text: {
-    fontSize: BUTTON_TEXT_SIZE,
-  },
+    fontSize: BUTTON_TEXT_SIZE
+  }
 });
 
 export default HomeScreen;
