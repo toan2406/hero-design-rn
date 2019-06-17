@@ -38,7 +38,7 @@ jobs:
       - *restore_yarn_cache
       - *yarn_install
       - *save_yarn_cache
-      - run: cd lib && yarn test
+      - run: yarn test
   release:
     <<: *default_config
     steps:
