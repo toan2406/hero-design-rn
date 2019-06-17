@@ -39,7 +39,7 @@ jobs:
       - *yarn_install
       - *save_yarn_cache
       - run: yarn test
-  release:
+  release_lib:
     <<: *default_config
     steps:
       - checkout
