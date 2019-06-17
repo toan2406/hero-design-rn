@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text Component local props should override style props on theme 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#ffffff",
+      "fontFamily": "Arial",
+      "fontSize": 20,
+      "fontWeight": "500",
+    }
+  }
+>
+  Hey
+</Text>
+`;
+
+exports[`Text Component should have correct fontsize when h1 1`] = `
+<Component
+  style={
+    Object {
+      "color": "#000000",
+      "fontFamily": "Arial",
+      "fontSize": 31.25,
+      "fontWeight": "400",
+    }
+  }
+/>
+`;
+
+exports[`Text Component should have correct fontsize when h2 1`] = `
+<Component
+  style={
+    Object {
+      "color": "#000000",
+      "fontFamily": "Arial",
+      "fontSize": 25,
+      "fontWeight": "400",
+    }
+  }
+/>
+`;
+
+exports[`Text Component should have correct fontsize when h3 1`] = `
+<Component
+  style={
+    Object {
+      "color": "#000000",
+      "fontFamily": "Arial",
+      "fontSize": 22.5,
+      "fontWeight": "400",
+    }
+  }
+/>
+`;
+
+exports[`Text Component should have correct fontsize when h4 1`] = `
+<Component
+  style={
+    Object {
+      "color": "#000000",
+      "fontFamily": "Arial",
+      "fontSize": 18.75,
+      "fontWeight": "400",
+    }
+  }
+/>
+`;
+
+exports[`Text Component should have correct fontsize when h5 1`] = `
+<Component
+  style={
+    Object {
+      "color": "#000000",
+      "fontFamily": "Arial",
+      "fontSize": 15,
+      "fontWeight": "400",
+    }
+  }
+/>
+`;
+
+exports[`Text Component should render without issues 1`] = `
+<Component
+  style={
+    Object {
+      "color": "#000000",
+      "fontFamily": "Arial",
+      "fontWeight": "400",
+    }
+  }
+/>
+`;
+
+exports[`Text Component should use values from the theme 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#ffffff",
+      "fontFamily": "Arial",
+      "fontSize": 50,
+      "fontWeight": "500",
+    }
+  }
+>
+  Hey
+</Text>
+`;

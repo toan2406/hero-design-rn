@@ -1,6 +1,7 @@
 import ButtonScreen from "./stories/Button";
 import CustomeTheme from "./stories/CustomeTheme";
 import TextInputScreen from "./stories/TextInput";
+import TextScreen from "./stories/Text";
 
 export default {
   Button: {
@@ -13,6 +14,12 @@ export default {
     screen: TextInputScreen,
     navigationOptions: {
       title: "TextInput"
+    }
+  },
+  Text: {
+    screen: TextScreen,
+    navigationOptions: {
+      title: "Text"
     }
   },
   CustomeTheme: {
