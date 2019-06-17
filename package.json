@@ -10,7 +10,8 @@
   "scripts": {
     "dev": "cd sandbox && expo start",
     "doc": "cd documentation && styleguidist server",
-    "doc:release": "cd documentation && styleguidist build && surge styleguide"
+    "doc:release": "cd documentation && styleguidist build && surge styleguide",
+    "test": "yarn run jest"
   },
   "author": "",
   "license": "ISC"
