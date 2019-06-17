@@ -11,7 +11,9 @@
     "dev": "cd sandbox && expo start",
     "doc": "cd documentation && styleguidist server",
     "doc:release": "cd documentation && styleguidist build && surge styleguide",
-    "test": "yarn run jest"
+    "test": "yarn run jest",
+    "test:watch": "yarn run jest --watch",
+    "test:coverage": "yarn run jest --coverage"
   },
   "author": "",
   "license": "ISC"

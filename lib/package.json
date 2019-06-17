@@ -4,7 +4,6 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "yarn run jest",
     "lint": "yarn run eslint ./src --quiet"
   },
   "author": "",
@@ -25,7 +24,8 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
     "flow-bin": "^0.100.0",
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "react-test-renderer": "^16.8.6"
   },
   "peerDependencies": {
     "react": "*",
