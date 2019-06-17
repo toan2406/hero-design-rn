@@ -47,8 +47,6 @@ jobs:
       - *restore_yarn_cache
       - *yarn_install
       - *save_yarn_cache
-      - attach_workspace:
-        at: ~/app
       - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/app/.npmrc
