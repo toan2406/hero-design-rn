@@ -53,6 +53,17 @@ jobs:
       - run:
           name: Publish package
           command: cd lib && npm publish
+  release_docs:
+    <<: *default_config
+    steps:
+      - checkout
+      - setup_remote_docker
+      - *restore_yarn_cache
+      - *yarn_install
+      - *save_yarn_cache
+      - run:
+          name: Publish docs
+          command: yarn doc:release
 workflows:
   version: 2
   build_and_deploy:
@@ -62,6 +73,16 @@ workflows:
       - test:
           context: org-global
       - release_lib:
+          context: org-global
+          filters:
+            branches:
+              only:
+                - master
+          requires:
+            - lint
+            - test
+            - hold_release
+      - release_docs:
           context: org-global
           filters:
             branches:
