@@ -1,4 +1,4 @@
-import { Button, Text, ThemeProvider } from "hero-design-rn";
+import { Button, Text, ThemeProvider, normalizeText } from "hero-design-rn";
 import { View, StyleSheet } from "react-native";
 import React from "react";
 
@@ -16,7 +16,25 @@ const styles = StyleSheet.create({
 
 const theme = {
   text: {
-    fontFamily: "Avenir"
+    fontFamily: "Avenir",
+    h1Style: {
+      fontSize: normalizeText(22)
+    },
+    h2Style: {
+      fontSize: normalizeText(20)
+    },
+    h3Style: {
+      fontSize: normalizeText(18)
+    },
+    h4Style: {
+      fontSize: normalizeText(16)
+    },
+    h5Style: {
+      fontSize: normalizeText(14)
+    },
+    h6Style: {
+      fontSize: normalizeText(12)
+    }
   },
   colors: {
     primaryColor: "#ff3242"
