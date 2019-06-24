@@ -7,4 +7,8 @@ Text example:
         <Text h5> Heading 5 </Text>
         <Text h6> Heading 6 </Text>
         <Text style={{ color: "red" }}> Red text</Text>
+        <Text h1 primary>Primary color</Text>
+        <Text h1 secondary>Secondary color</Text>
+        <Text h1 error>Error color</Text>
+        <Text h1 success>Success color</Text>
 ```

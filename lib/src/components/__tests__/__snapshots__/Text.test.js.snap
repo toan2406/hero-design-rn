@@ -15,6 +15,54 @@ exports[`Text Component local props should override style props on theme 1`] = `
 </Text>
 `;
 
+exports[`Text Component should have correct color when error 1`] = `
+<Component
+  style={
+    Object {
+      "color": "red",
+      "fontFamily": "Arial",
+      "fontWeight": "400",
+    }
+  }
+/>
+`;
+
+exports[`Text Component should have correct color when primary 1`] = `
+<Component
+  style={
+    Object {
+      "color": "#000000",
+      "fontFamily": "Arial",
+      "fontWeight": "400",
+    }
+  }
+/>
+`;
+
+exports[`Text Component should have correct color when secondary 1`] = `
+<Component
+  style={
+    Object {
+      "color": "#ffffff",
+      "fontFamily": "Arial",
+      "fontWeight": "400",
+    }
+  }
+/>
+`;
+
+exports[`Text Component should have correct color when success 1`] = `
+<Component
+  style={
+    Object {
+      "color": "green",
+      "fontFamily": "Arial",
+      "fontWeight": "400",
+    }
+  }
+/>
+`;
+
 exports[`Text Component should have correct fontsize when h1 1`] = `
 <Component
   style={

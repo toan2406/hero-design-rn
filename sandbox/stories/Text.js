@@ -20,6 +20,18 @@ class TextScreen extends React.Component {
         <Text h4> Heading 4 </Text>
         <Text h5> Heading 5 </Text>
         <Text h6> Heading 6 </Text>
+        <Text h1 primary>
+          Primary color
+        </Text>
+        <Text h1 secondary>
+          Secondary color
+        </Text>
+        <Text h1 error>
+          Error color
+        </Text>
+        <Text h1 success>
+          Success color
+        </Text>
         <Text> Bold </Text>
         <Text h1 bold>
           Heading 1
