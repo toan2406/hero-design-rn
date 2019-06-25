@@ -4,7 +4,7 @@ exports[`Text Component local props should override style props on theme 1`] = `
 <Text
   style={
     Object {
-      "color": "#ffffff",
+      "color": "#000000",
       "fontFamily": "Arial",
       "fontSize": 20,
       "fontWeight": "500",
@@ -156,7 +156,7 @@ exports[`Text Component should use values from the theme 1`] = `
 <Text
   style={
     Object {
-      "color": "#ffffff",
+      "color": "#000000",
       "fontFamily": "Arial",
       "fontSize": 50,
       "fontWeight": "500",
