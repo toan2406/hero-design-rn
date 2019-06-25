@@ -27,18 +27,6 @@ exports[`Text Component should have correct color when danger 1`] = `
 />
 `;
 
-exports[`Text Component should have correct color when error 1`] = `
-<Component
-  style={
-    Object {
-      "color": "red",
-      "fontFamily": "Arial",
-      "fontWeight": "400",
-    }
-  }
-/>
-`;
-
 exports[`Text Component should have correct color when primary 1`] = `
 <Component
   style={
