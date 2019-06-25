@@ -26,8 +26,11 @@ class TextScreen extends React.Component {
         <Text h1 secondary>
           Secondary color
         </Text>
-        <Text h1 error>
-          Error color
+        <Text h1 danger>
+          Danger color
+        </Text>
+        <Text h1 warning>
+          Warning color
         </Text>
         <Text h1 success>
           Success color

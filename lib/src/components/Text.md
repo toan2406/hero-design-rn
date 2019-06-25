@@ -9,6 +9,7 @@ Text example:
         <Text style={{ color: "red" }}> Red text</Text>
         <Text h1 primary>Primary color</Text>
         <Text h1 secondary>Secondary color</Text>
-        <Text h1 error>Error color</Text>
+        <Text h1 danger>Danger color</Text>
+        <Text h1 warning>Warning color</Text>
         <Text h1 success>Success color</Text>
 ```

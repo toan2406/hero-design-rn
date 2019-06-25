@@ -15,6 +15,18 @@ exports[`Text Component local props should override style props on theme 1`] = `
 </Text>
 `;
 
+exports[`Text Component should have correct color when danger 1`] = `
+<Component
+  style={
+    Object {
+      "color": "red",
+      "fontFamily": "Arial",
+      "fontWeight": "400",
+    }
+  }
+/>
+`;
+
 exports[`Text Component should have correct color when error 1`] = `
 <Component
   style={
@@ -56,6 +68,18 @@ exports[`Text Component should have correct color when success 1`] = `
   style={
     Object {
       "color": "green",
+      "fontFamily": "Arial",
+      "fontWeight": "400",
+    }
+  }
+/>
+`;
+
+exports[`Text Component should have correct color when warning 1`] = `
+<Component
+  style={
+    Object {
+      "color": "yellow",
       "fontFamily": "Arial",
       "fontWeight": "400",
     }
