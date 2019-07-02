@@ -21,11 +21,10 @@ module.exports = {
         },
         {
           name: "Customization",
-          content: "docs/customization.md"
+          content: `../lib/src/config/ThemeProvider.md`
         },
         {
-          name: "Theme configuration",
-          components: `../lib/src/config/theme.js`,
+          name: "Employment Theme",
           content: "docs/theme.md"
         }
       ]
