@@ -15,7 +15,22 @@ class TextInputScreen extends React.Component {
       <View style={styles.container}>
         <TextInput />
         <TextInput error="Email can not be blank" />
+        <TextInput
+          placeholder="Enter your email"
+          error="Email can not be blank"
+          noBorder
+        />
         <TextInput placeholder="Enter your phone number" keyboard="numeric" />
+        <TextInput
+          placeholder="Enter your phone number"
+          keyboard="numeric"
+          noMargin
+        />
+        <TextInput
+          placeholder="Enter your phone number"
+          keyboard="numeric"
+          noBorder
+        />
       </View>
     );
   }
